@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    @apply p-0 m-0;
+}
+
+.App{
+    @apply w-screen h-screen;
+
+    .Navbar{
+        @apply w-screen flex items-center bg-primary text-white;
+        height:20%;
+
+        ul{
+            @apply ml-32 flex gap-16;
+            list-style: none;
+
+            li{
+                @apply hover:text-blue-600 cursor-pointer;
+            }
+            
+        }
+        .contact-info{
+            @apply ml-auto;
+            
+        }
+
+    }
+    .Home{
+        @apply container mx-auto;
+
+    }
+    
+        
+    
+}
